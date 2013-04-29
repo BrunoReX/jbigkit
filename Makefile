@@ -2,7 +2,10 @@
 # $Id: Makefile 1303 2008-08-30 20:16:20Z mgk25 $
 
 # Select an ANSI/ISO C compiler here, GNU gcc is recommended
-CC = gcc
+CC = $(CROSS)gcc
+AR = $(CROSS)ar
+LD = $(CROSS)ld
+RANLIB = $(CROSS)ranlib
 
 # Options for the compiler: A high optimization level is suggested
 CCFLAGS = -O2 -W

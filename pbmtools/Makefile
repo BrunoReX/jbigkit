@@ -2,7 +2,10 @@
 # $Id: Makefile 1293 2008-08-25 22:26:39Z mgk25 $
 
 # Select an ANSI/ISO C compiler here, e.g. GNU gcc is recommended
-CC = gcc
+CC = $(CROSS)gcc
+AR = $(CROSS)ar
+LD = $(CROSS)ld
+RANLIB = $(CROSS)ranlib
 
 # Options for the compiler
 CFLAGS = -g -Wall -ansi -pedantic -I../libjbig # --coverage
