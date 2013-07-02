@@ -8,7 +8,7 @@ LD = $(CROSS)ld
 RANLIB = $(CROSS)ranlib
 
 # Options for the compiler: A high optimization level is suggested
-CCFLAGS = -O2 -W
+CCFLAGS = -O2 -W $(XCCFLAGS)
 #CCFLAGS = -O -g -W -Wall -ansi -pedantic #-DDEBUG  # developer only
 
 CFLAGS = $(CCFLAGS) -I../libjbig
